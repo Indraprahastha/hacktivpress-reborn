@@ -37,8 +37,41 @@ const updateArtikel = (req,res) => {
   })
 }
 
+const getArtikelOne = (req,res) => {
+  artikel.findById({
+    _id:req.params.id
+  }).populate('author','username').then((data)=>{
+    res.send(data)
+  }).catch((err)=>{
+    res.send(err)
+  })
+}
+
+const getArtikelCategori = (req,res) => {
+  artikel.find({
+    category:req.params.category
+  }).populate('author','username').then((data)=>{
+    res.send(data)
+  }).catch((err)=>{
+    res.send(err)
+  })
+}
+
+const deleteArikel = (req,res) => {
+  artikel.remove({
+    _id:req.params.id
+  }).then((data)=>{
+    res.send(data)
+  }).catch((err)=>{
+    res.send(err)
+  })
+}
+
 module.exports = {
   addArtikel,
   getArtikelAll,
-  updateArtikel
+  updateArtikel,
+  getArtikelOne,
+  getArtikelCategori,
+  deleteArikel
 }
