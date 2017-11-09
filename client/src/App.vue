@@ -2,9 +2,8 @@
   <div id="app">
     <Navbar/>
     <div class="container">
-      
       <div class="col-sm-4">
-
+        <Login/>
       </div>
       <div class="col-sm-8">
         <router-view/>
@@ -16,10 +15,12 @@
 
 <script>
 import Navbar from '@/components/Navbar'
+import Login from '@/components/Login'
 export default {
   name: 'app',
   components: {
-    Navbar
+    Navbar,
+    Login
   }
 }
 </script>
