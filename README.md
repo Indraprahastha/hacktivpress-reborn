@@ -61,7 +61,7 @@
 
 # Penggunaan
 
-git clone repository ini
-npm install di client & server,
-nodemon app.js di server,
-npm run dev di client
+<p>git clone repository ini</p>
+<p>npm install di client & server</p>
+<p>nodemon app.js di server</p>
+<p>npm run dev di client</p>
