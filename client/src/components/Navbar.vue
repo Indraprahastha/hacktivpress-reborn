@@ -1,16 +1,7 @@
 <template>
   <div class="hello">
     <div class="container">
-  <!-- Topper w/ logo -->
-  <div class="row hidden-xs topper">
-    <div class="col-xs-7 col-sm-7">
-      <a href="//convertify.io"><img am-TopLogo alt="SECUREVIEW"  src="http://blog.convertify.io/assets/images/logo--hero.png" class="img-responsive"></a>
-    </div>
-    <div class="col-xs-5 col-xs-offset-1 col-sm-5 col-sm-offset-0 text-right ">
-      <p am-CallNow>1 (888) CALL - NOW</p>
-    </div>
-  </div> <!-- End Topper -->
-  <!-- Navigation -->
+
   <div class="row">
     <nav class="navbar navbar-inverse" role="navigation">
       <div class="container">
@@ -22,7 +13,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand visible-xs-inline-block nav-logo" href="/"><img src="/images/logo-dark-inset.png" class="img-responsive" alt=""></a>
+          <a class="navbar-brand visible-xs-inline-block nav-logo" href="/"></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->

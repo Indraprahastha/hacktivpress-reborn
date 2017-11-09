@@ -1,10 +1,5 @@
 <template>
   <div class="container Content">
-    <div class="list-group" v-for="data in banyakArtikel">
-      <a href="#" class="list-group-item  list-group-item-action">
-        <h4><b>{{data.title}}</b></h4>
-      </a>
-    </div>
   </div>
 </template>
 
@@ -18,23 +13,17 @@ export default {
   },
   computed: {
     ...mapState([
-      'banyakArtikel'
     ])
   },
   methods: {
     ...mapActions([
-      'semuaArtikel'
     ])
   },
   created () {
-    this.semuaArtikel()
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.list-group {
-  margin-bottom: 0px
-}
 </style>
