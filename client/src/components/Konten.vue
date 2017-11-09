@@ -1,9 +1,11 @@
 <template>
-  <div class="container Content">
+  <div class="Konten">
     <div class="list-group" v-for="data in banyakArtikel">
-      <a href="#" class="list-group-item  list-group-item-action">
+      <router-link :to="data._id">
+      <a class="list-group-item  list-group-item-action">
         <h4><b>{{data.title}}</b></h4>
       </a>
+      </router-link>
     </div>
   </div>
 </template>
@@ -11,7 +13,7 @@
 <script>
 import { mapActions, mapState } from 'vuex'
 export default {
-  name: 'Content',
+  name: 'Konten',
   data () {
     return {
     }

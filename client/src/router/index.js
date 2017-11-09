@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Content from '@/components/Content'
+import Home from '@/components/Home'
+import Konten from '@/components/Konten'
 import Contentsatuan from '@/components/Contentsatuan'
 
 Vue.use(Router)
@@ -9,12 +10,12 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Content',
-      component: Content,
+      name: 'Home',
+      component: Home,
       children: [
         {
           path: '',
-          component: Content
+          component: Konten
         },
         {
           path: ':id',

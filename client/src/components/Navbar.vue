@@ -2,50 +2,39 @@
   <div class="hello">
     <div class="container">
 
-  <div class="row">
-    <nav class="navbar navbar-inverse" role="navigation">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand visible-xs-inline-block nav-logo" href="/"></a>
-        </div>
+      <div class="row">
+        <nav class="navbar navbar-inverse" role="navigation">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand visible-xs-inline-block nav-logo" href="/"></a>
+            </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-          <ul class="nav navbar-nav js-nav-add-active-class">
-            <li><a href="/index.html">Home</a></li>
-            <li class="active"><a href="/markets.html">Markets</a></li>
-            <li><a href="/buy.html">Buy</a></li>
-            <li><a href="/svstrike.html">svStrike</a></li>
-            <li><a href="/training.html">Training</a></li>
-            <li><a href="/contact.html">Contact Us</a></li>
-            <li class="visible-xs-block"><a href="/about.html">About Us</a></li>
-            <li class="visible-xs-block"><a href="/careers.html">Careers</a></li>
-            <li class="visible-xs-block"><a href="/press-release.html">Press Release</a></li>
-            <li class="visible-xs-block"><a href="https://susteen7.zendesk.com/hc/en-us">Support</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Company <b class="caret"></b></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="careers.html">Careers</a></li>
-                <li><a href="press-release.html">Press Release</a></li>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+              <ul class="nav navbar-nav js-nav-add-active-class">
+                <li><a href="/index.html">Home</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Company <b class="caret"></b></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="about.html">About Us</a></li>
+                  </ul>
+                </li>
               </ul>
-            </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right hidden-xs">
-            <a type="button" class="navbar-btn btn btn-gradient-blue" am-latosans="bold" href="https://susteen7.zendesk.com/hc/en-us">Support</a>
-          </ul>
-        </div><!-- /.navbar-collapse -->
+              <ul class="nav navbar-nav navbar-right hidden-xs">
+                <a type="button" class="navbar-btn btn btn-gradient-blue" am-latosans="bold" href="https://susteen7.zendesk.com/hc/en-us">Support</a>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div>
+        </nav>
       </div>
-    </nav>
-  </div>
-</div>
+    </div>
   </div>
 </template>
 
@@ -78,15 +67,11 @@ export default {
     font-size: 19px;
     padding-right: 8px;
 }
-/*
-  Relevant styles below
-*/
 .topper {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
-
 .navbar.navbar-inverse {
   background-image: linear-gradient(#9f9f9f, #535353 3%, #1f1f1f 17%, #212121 49%, #191919 89%, #000000 100%);
   border-top: 1px inset rgba(255, 255, 255, 0.1);
@@ -94,7 +79,6 @@ export default {
   border-radius: 10px;
   margin-top: 10px;
 }
-
 .navbar .navbar-nav > li > a {
   color: #d1d1d1;
   font-weight: 700;
@@ -102,7 +86,6 @@ export default {
   text-shadow: 0px -1px black, 0px 1px rgba(255, 255, 255, 0.25);
   line-height: 18px;
 }
-
 .navbar .navbar-nav > li.active {
   color: #f8f8f8;
   background-color: #080808;
@@ -110,7 +93,6 @@ export default {
   border-left: 1px solid #2A2A2A;
   border-right: 1px solid #272727;
 }
-
 .btn.btn-gradient-blue {
   background-color: #0c5497 !important;
   background-image: -webkit-linear-gradient(top, #127bde 0%, #072d50 100%);

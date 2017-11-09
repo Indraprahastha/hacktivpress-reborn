@@ -10,12 +10,16 @@ const http = axios.create({
 Vue.use(Vuex)
 
 const state = {
-  banyakArtikel: []
+  banyakArtikel: [],
+  artikel: ''
 }
 
 const mutations = {
   semuaArtikelnya (state, payload) {
     state.banyakArtikel = payload
+  },
+  artikelSatuan (state, payload) {
+    state.artikel = payload
   }
 }
 
@@ -23,6 +27,13 @@ const actions = {
   semuaArtikel ({commit}) {
     http.get('/artikel').then(({data}) => {
       commit('semuaArtikelnya', data)
+    })
+  },
+  satuanArtikel ({commit}, id) {
+    // console.log(id.id)
+    http.get('/artikel/' + id.id).then(({data}) => {
+      commit('artikelSatuan', data)
+      // console.log(data)
     })
   }
 }
