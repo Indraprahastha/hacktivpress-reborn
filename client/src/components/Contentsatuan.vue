@@ -14,6 +14,8 @@
         <div class="form-group">
 
           <input v-model="title" type="text" class="kolominput form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=""></input>
+          <input v-model="category" type="text" class="kolominput form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=""></input>
+          <input v-model="content" type="text" class="kolominput form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=""></input>
         </div>
         <button type="submit" class="btn btn-default btn-lg btn-block">Login</button>
       </form>
@@ -31,7 +33,7 @@ export default {
       title: '',
       category: '',
       content: '',
-      triger: true
+      triger: false
     }
   },
   computed: {
@@ -50,6 +52,8 @@ export default {
   created () {
     this.satuanArtikel(this.id)
     this.title = this.artikel.title
+    this.category = this.artikel.category
+    this.content = this.artikel.content
     // console.log(this.id)
   }
 }
